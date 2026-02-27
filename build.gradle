@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 repositories {
@@ -7,7 +8,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
+    // No dependencies required for Program-3
+}
+
+application {
+    mainClass = 'App'
 }
 
 task customTask {
