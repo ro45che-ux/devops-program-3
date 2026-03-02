@@ -1,4 +1,4 @@
-plugins {
+/*plugins {
     id 'java'
     id 'application'
 }
@@ -19,4 +19,20 @@ task customTask {
     doLast {
         println 'This is a custom task'
     }
+}*/
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass = 'App'
 }
